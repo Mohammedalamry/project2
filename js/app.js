@@ -85,7 +85,7 @@ let mint=0; //this is to count the mint in settimer fucnction.
 
 
   /**
-* @description used to push clicked cards into opencards arry and prevent user from selecting the Same cards 
+* @description used to push clicked cards into opencards arry and prevent user from selecting the Same cards. 
     
 * @param {array} get  
 */   
@@ -153,8 +153,8 @@ listcard.addEventListener('click', respondToTheClick);
 //===================================================================
 /**
 *@description this fuction is used to remove all not matched cards in the game baord.
-*@param {string }  firs this is Classname of Firstcard.
-*@param {string }  tiwc this is Classname of Secondcard.
+*@param {string }  firs this is Class Name of first children of Firstcard.
+*@param {string }  tiwc this is Classname of first children of Secondcard.
 */ 
    
     function notmacthacrd (firs,tiwc) {
