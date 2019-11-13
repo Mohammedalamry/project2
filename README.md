@@ -49,7 +49,13 @@ file to make the web page interactive through the Document Object Model - DOM).
 * thrid pass **icons** array to_shuffle Method_ 
 * store return random varablie from shuffle arry in the **icons** arry
 * final assign this values of **icons** array to the **card**array. 
- 
+
+## enevt clik on the game
+
+* [Event click on the cards](#Eventclickonthecards)
+* [Even clickon Reset Game](#EvenclickonResetGame)
+* [Evenclickonthetheplayagin](#Evenclickonthetheplayagin)
+
  
 ## Event click on the cards
   befor I do this steps I roveme all carsd from gameboard.
@@ -78,7 +84,7 @@ invoke for movecounter and startcounthn functions to count the Move and the star
  if there is a click on reset icon all following will be reset:
     Move will be set to 0, star rest to three stars .the gameboard remove all card by use loop over an array that holds all cards this is **card** array and use classlist. remove, and clear for opencard array and Firstcard and Secondcard. setTime will be reset to 0 of second and mint and invoke shuffleicons method.  
  
-## Event clickon the playagin button
+## Event clickon on the playagin button
    The function play again will be available after the function pop message execute.
    if click on the button that will reset the game.
 ##information of game for user 
@@ -91,18 +97,20 @@ invoke for movecounter and startcounthn functions to count the Move and the star
 ## Timer
     There is setTime function to make the form of time minute and second 
     Setimout function that makes the count of time appear in the HTML Timer Element by use innerHTML
-   the timer runs it dependent on if condition.if TimeControl==1 then the timer will start and TimeControl it dependent on the first click to start the game.
+   the timer runs it dependent on if condition. if secom ==1 then the timer will start and secom it dependent on the first click to start the game.
 
 ## Move 
-    In this method will show number move for two card click 
- that depends on the countr++ and invoke function Movecounter in machtcard method and notmachard function. 
+   In this method will show number move for two card click 
+ that dependent on the countr++ and invoke function Movecounter in machtcard method and notmachard function and  the opecards function  below  if condition to test if click was in the same cards then set result in the Move HTML element by the Move tag inner HTML on the Webpage. 
 
-## Star 
-  In this method will  decreas  number  of stars for two  after number of Movement that is depnds on Movecounter method.   
+## Star
+  In this method will show  number  of stars for two  after number of Movement.  
+ that dependent on the countr++ and invoke function startcounthn in machtcard method and notmachcard function. 
+Set result in the star HTML element by classlist.add() on the Webpage. 
 ## pop messsage method 
-  This  method to pop up information such as Time, rate of star
-   and a number of movements. 
-   set and show options button to play.   
+   This  method to pop up information such as Time,rate of star
+   and number of movemt. 
+   set and show option buttioin to playaign.
 
 ## Endgame 
   The game will end if mactchcard.lenth==16 and timer will stop and remove all matchcard with other

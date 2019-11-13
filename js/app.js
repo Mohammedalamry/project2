@@ -82,7 +82,7 @@ let mint=0; //this is to count the mint in settimer fucnction.
 
  
 //=================================================================
- //
+
 
   /**
 * @description used to push clicked cards into opencards arry and prevent user from selecting the Same cards 
@@ -156,7 +156,7 @@ listcard.addEventListener('click', respondToTheClick);
 *@param {string }  firs this is Classname of Firstcard.
 *@param {string }  tiwc this is Classname of Secondcard.
 */ 
-    //
+   
     function notmacthacrd (firs,tiwc) {
        
        if(firs!=tiwc){                   
@@ -214,7 +214,7 @@ for( let i of card ){
   }   }
 
 //========================================================================
-    //
+   
 
     /**
 * @description this fuction to count step moves when user click on two cards  .
