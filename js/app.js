@@ -19,7 +19,7 @@ let mint=0; //this is to count the mint in settimer fucnction.
 
 
 //====================================================================   
-     // creat list that holds all cards then push them into icon arry 
+     // creat list that holds all cards then push them into icons arry. 
          let icons = []; 
   const cardlist = document.createElement('ul');
       
@@ -42,7 +42,7 @@ let mint=0; //this is to count the mint in settimer fucnction.
      
 //======================================================================
    /**
-* @description this Method use it assaing  the random card that come from shuffl arry to card arry 
+* @description this Method use it assaing  the random card that come from shuffl arry to card arry. 
 */  
  function shuffleicons(){                     
 
@@ -61,7 +61,7 @@ let mint=0; //this is to count the mint in settimer fucnction.
 //=======================================================================
    
  /**
-* @description tthis Method is used  to respons for the user when click on the cards.
+* @description this Method is used  to respons for the user when click on the cards.
 */  
 
  function respondToTheClick(evt) { 
@@ -131,8 +131,8 @@ listcard.addEventListener('click', respondToTheClick);
  
 /**
 * @description this is method to show matched card in game Board.
-  @param {string  }  firs this is Classname of Firstcard. 
-  @param {string }  tiwc this is Classname of Secondcard.
+  @param {string  }  firs this is ClassName of first children of Firstcard. 
+  @param {string }  tiwc this is Classname of first children of Secondcard.
 */ 
  function matchcard (firs,tiwc){                     
   
@@ -186,13 +186,15 @@ if (firs!=tiwc) {
 
 
 //=====================================================================
-     //these variables are used to control in the  pop message when user win the game 
+     //these variables are used to control in the pop message when user win the game.
      let matcards;
      let showmessag = document.querySelector('.pop');
      let ifno=showmessag.querySelector('.inforate'); 
   
     /**
-* @description Method to show for user informaitin after winng in game such as time and rate of star ,Timer and give him optino if he want play again. 
+* @description  Method to show for user information after winning in game such as  
+Number of Moves ,Rate of star ,Timer, and give him option if he want play again.
+   
 */ 
     function popmessage(){ 
 
@@ -217,7 +219,7 @@ for( let i of card ){
    
 
     /**
-* @description this fuction to count step moves when user click on two cards  .
+* @description this fuction to count step moves when user click on two cards.
 */ 
      let counter;
   function movecounter (){
@@ -228,11 +230,11 @@ for( let i of card ){
 }  
 //=====================================================================
 
- //this varaible use to control of the number of star 
+ //this varaible use to control of the number of stars. 
 let countstar=3;
  
    /**
-* @description this method use to decrease the number of star and remove srtar.
+* @description this method use to decrease the number of stars and remove stars.
 */ 
 function startcounthn(){
   
@@ -270,7 +272,7 @@ starsa.push(getstars);
 
   
     /**
-* @description  this method use to Form the Timer .
+* @description  this method use to Form the Timer.
 */ 
  
 function setTime(){                    
@@ -312,7 +314,7 @@ restart.addEventListener('click',resttsart);
 
 /**
  * @descriptionthis function is used to restart the game and respons for the click on restart icon.
-*/ 
+*/  
   
 function resttsart(evt){
  mint=0; second=0;
@@ -325,7 +327,7 @@ count=0;
         
    } 
 
-     //this to  aviod Erreor  when  click one card after that click on ressetbuttn
+     //this to aviod Erreor  when  click one card after that click on ressetbuttn
    if (opencards.length==1) {Firstcard=[]; Secondcard=[]; opencards=[]; }
  //this is use form time after click on restart icon     
 ctimer.innerHTML= '0'+mint+':'+'0'+second;
@@ -367,7 +369,7 @@ count=0;
   if(play.matches('button')){     
 
   showmessag.style.display='none';
-   //remove  all match cards and 
+    
     for( let i of card ){ 
   i.classList.remove('open', 'show', 'match');
 } 
@@ -389,7 +391,7 @@ starsa[1].children[0].classList.add('fa-star');
 //invoke shufflle method 
  shuffleicons();
 
- //to remove all macht card when the user click playainbutton
+ //to remove all macht card when the user click play again button
 listcard.children[0].children[0].classList.remove('.card.match');
 
 
