@@ -97,7 +97,7 @@ invoke for movecounter and startcounthn functions to count the Move and the star
 ## Timer
     There is setTime function to make the form of time minute and second 
     Setimout function that makes the count of time appear in the HTML Timer Element by use innerHTML
-   the timer runs it dependent on if condition. if secom ==1 then the timer will start and secom it dependent on the first click to start the game.
+   the timer runs it dependent on if condition. if TimeContro==1 then the timer will start and TimeControl it dependent on the first click to start the game.
 
 ## Move 
    In this method will show number move for two card click 
